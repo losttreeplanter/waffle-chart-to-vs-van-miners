@@ -8,13 +8,15 @@ waffle(savings/392, rows=7, size=0.5,
        title="Average Household Savings Each Year", 
        xlab="1 square == $392")
 
-########### stuff
+########### updated numbers using active company status and public and reporting
 
 
 library(waffle)
-addresses <- c(`Vancouver, Canada - 1,431`=1431, `Toronto, Canada - 564`=564, `London, United Kingdom - 158`=158, `Perth, Australia - 122`=122, `Melbourne, Australia - 70`=70, `Johannesburg, South Africa - 69`=69)
-waffle(addresses, rows=45, size=0.5, 
-       colors=c('#66c2a5','#fc8d62','#8da0cb','#e78ac3','#a6d854','#ffd92f'), 
-       title="Number of miners and juniors per city", 
+addresses <- c(`Vancouver, Canada - 851`=851, `Toronto, Canada - 308`=308, `Perth, Australia - 263`=263, 
+               `London, United Kingdom - 92`=92, `Calgary, Canada - 56`=56,`Melbourne, Australia - 37`=37, 
+               `Johannesburg, South Africa - 14`=14, `New York, U.S.A. - 7`=7, `Denver, U.S.A. - 5`=5)
+waffle(addresses, rows=25, size=0.5, 
+       colors=c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6'), 
+       title="Listed miners and juniors per city", 
        xlab=NULL)
 
